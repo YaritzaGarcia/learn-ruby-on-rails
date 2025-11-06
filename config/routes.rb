@@ -8,5 +8,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
+  # Render the Products index action 
+  root "products#index"
+  # CRUD routes for Products
   resources :products
 end
