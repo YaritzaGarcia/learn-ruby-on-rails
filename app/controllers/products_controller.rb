@@ -1,6 +1,5 @@
 class ProductsController < ApplicationController
   def index
-    # Instance variable
     @products = Product.all
   end
 
@@ -23,6 +22,6 @@ class ProductsController < ApplicationController
 
   private
     def product_params
-      params.expect(product: [:name])
+      params.expect(product: [ :name ])
     end
 end
