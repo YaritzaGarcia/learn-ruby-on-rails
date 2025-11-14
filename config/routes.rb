@@ -13,5 +13,7 @@ Rails.application.routes.draw do
   # Render the Products index action 
   root "products#index"
   # CRUD routes for Products
-  resources :products
+  resources :products do
+    resources :subscribers, only: [ :create ]
+  end
 end
